@@ -11,7 +11,8 @@ int main()
 {
 	double tab[5][7] = {};
 	int i, j;
-
+	double wartosc_min=12, przekatna = 0;
+	
 	for (i = 0; i < 5; i++)
 	{
 		for (j = 0; j < 7; j++)
@@ -27,6 +28,14 @@ int main()
 			cout << setprecision(2) << tab[i][j] << "\t";
 		}
 		cout << endl;
+	}
+
+	for (i = 0; i <= 2; i++)
+	{
+		if (wartosc_min > tab[2][2 + i])
+		{
+			wartosc_min = tab[2 + i][2];
+		}
 	}
 
 }
