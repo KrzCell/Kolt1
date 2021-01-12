@@ -4,7 +4,7 @@
 #include <math.h>
 using namespace std;
 
-#define Zadanie4
+#define Zadanie1
 
 #ifdef Zadanie1
 #define RND (rand()+1.0)/ (RAND_MAX+2.0)
@@ -67,7 +67,9 @@ void pozmieniaj(const char* dane)
 
 void test_wypisania_od_tylu()
 {
-
+	char text[] = "jeden";
+	char oczekwiany_text[] = "nedej";
+	if()
 }
 
 void test_zamiana_liter()
@@ -77,12 +79,21 @@ void test_zamiana_liter()
 
 void test_wprowadzanie_danych()
 {
-
+	char text[] = "jeden";
+	try {
+		pozmieniaj(text);
+	}
+	catch (invalid_argument)
+	{
+		cerr << "Zle dane";
+	}
+	catch(...){}
+	cerr << "Blad";
 }
 
 int main()
 {
-
+	test_wprowadzanie_danych();
 }
 
 #endif
