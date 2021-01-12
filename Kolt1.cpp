@@ -4,7 +4,7 @@
 #include <math.h>
 using namespace std;
 
-#define Zadanie3
+#define Zadanie4
 
 #ifdef Zadanie1
 #define RND (rand()+1.0)/ (RAND_MAX+2.0)
@@ -124,13 +124,27 @@ double masaWalca(double promien, double wysokosc, double gestosc_materialu)
 
 int main()
 {
-	cout << masaWalca(2, 2, 2);
+	cout << masaWalca(2, 2, -2);
 }
 
 #endif
 
 #ifdef Zadanie4
+int main()
+{
+	int n=0,l;
+	while (!(n % 2)) {
+		cout << "Podaj liczbe naturalna, nieparzysta -> ";
+		cin >> n;
+	}
 
-	// TU ROZWIĄZUJ ZADANIE 4:
-
+	cout << endl;
+	
+	do {
+		for(int i=0;i<n;i++)
+			cout << "  ";
+		cout << "_|" << endl;
+		n--;
+	} while (n != 0);
+}
 #endif
